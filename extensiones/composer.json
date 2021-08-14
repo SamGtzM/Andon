@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "vista/css/js/src"
+        }
+    },
+
+    "require": {
+        "cboden/ratchet": "^0.4.3"
+    }
+}

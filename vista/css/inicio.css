@@ -1,0 +1,72 @@
+.backazul{
+    position: absolute;
+    width: 6%;
+    height: 100vh;
+    left: 5.5% !important;
+    background-color: #158ec5;
+}
+
+.backini {
+    background: #1E1E1E;
+    height: 80vh;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -webkit-box-shadow: 1px 1px 12px 1px rgba(0,0,0,0.72);
+    -moz-box-shadow: 1px 1px 12px 1px rgba(0,0,0,0.72);
+    box-shadow: 1px 1px 12px 1px rgba(0,0,0,0.72);
+}
+
+h1 {
+    color: #fff;
+    font-family: sans-serif;
+    position: absolute;
+    top: 45%;
+    font-size: 3em;
+    left: 10%;
+}
+
+#canvas {
+    position: relative;
+    top: 10%;
+    float: right;
+    right: 8%;
+    
+ }
+
+ .content-area {
+    position: absolute;
+    top: 58%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: auto;
+    width: 40%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .5vh;
+    text-transform: uppercase;
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .content-area a{
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  /* The Magic */
+  .knowledge {
+      font-size: 100%;
+      color: #ffffff;
+    transition: all .6s;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .5vh;
+    text-align: left;
+  }

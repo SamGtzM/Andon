@@ -1,0 +1,19 @@
+<?php
+
+require_once "../controladores/general_cross_30.controlador.php";
+require_once "../modelos/general_cross_30.modelo.php";
+
+class cross_30_status_tercerturno_04_05{
+
+    public function cross_30_status_TercerTurno_04_05(){
+
+        $valor71 = ControladorCross_30::ctr_cross_30_status_TercerTurno_04_05();
+
+        echo json_encode($valor71);    
+
+    }
+
+}
+
+$activar = new cross_30_status_tercerturno_04_05();
+$activar -> cross_30_status_TercerTurno_04_05();

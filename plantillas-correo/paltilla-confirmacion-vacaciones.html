@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+        height: 100%;
+        }
+
+        body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(https://cdn-images-1.medium.com/max/2000/1*ud7JwDc-grF4baKsrEHb0g.jpeg) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+
+        .form-signin {
+        width: 380px;
+        max-width: 100%;
+        padding: 25px 15px 20px;
+        margin: 0 auto;
+        border-radius: 3px;
+        position: relative;
+        overflow: hidden;
+        }
+
+        /* Frosted glass / Blurred background and inner box shadow */
+        .form-signin::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: -30px;
+        left: -30px;
+        right: -30px;
+        bottom: -30px;
+        border-radius: 3px;
+        background: url(https://discordapp.com/assets/85e031dc63742b86264cc0dbc2a6fdb8.jpg) no-repeat fixed;
+        filter: blur(10px);
+        }
+
+        /* Gradient and inner box shadow */
+        .form-signin::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 3px;
+        background: -webkit-linear-gradient(top, rgba(255,255,255,0.75) 0, rgba(255,255,255,0.75) 170px, rgba(48, 45, 53, 0.8) 170px, rgba(48, 45, 53, 0.8) 100%);
+        }
+
+
+
+        /* Everything below this point is not related to the background effect */
+        .form-signin label[for=inputEmail], .form-signin label[for=inputPassword] {
+        position: absolute;
+        bottom: -26px;
+        left: 3px;
+        font-size: 11px;
+        font-weight: 300;
+        color: rgba(255,255,255,0.65);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        }
+
+        .form-signin--password-wrapper, .form-signin--email-wrapper {
+        position: relative;
+        }
+
+        .form-signin input[type="email"], .form-signin input[type="password"] {
+        color: rgba(255,255,255,0.95);
+        height: 40px;
+        padding: 0 0 0 3px;
+        margin: 0 0 30px;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid rgba(255,255,255,0.65);
+        background: transparent;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        }
+
+        .form-signin input[type="password"]:focus, .form-signin input[type="email"]:focus {
+        border-bottom: 1px solid white;
+        }
+
+        .form-signin input[type="email"]:focus + label, .form-signin input[type="password"]:focus + label {
+        color: rgba(255,255,255,1);
+        } 
+
+        .form-check {
+        color: rgba(255,255,255,0.65);
+        font-size: 11px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: left;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        margin-left: 3px;
+        }
+
+        .form-check-label {
+        margin-top: 2px;
+        }
+
+        .form-check-input:checked + label {
+        color: rgba(255,255,255,1);
+        }
+
+        .form-signin button {
+        background: #563d7c;
+        border: none;
+        }
+
+        .form-signin button:hover {
+        background: #644299;
+        border: none;
+        }
+
+        .btn1 {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        }
+
+        .btn2 {
+        background-color: #f44336; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        }
+    </style>
+</head>
+    <body>
+
+    <form class="form-signin">
+
+        <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+
+        <h1 class="h3 mb-3 pb-3 font-weight-normal">Aprobar vacaciónes!</h1>
+
+        <h3 class="h3 mb-3 pb-3 font-weight-normal"><?php $_SESSION["nombrecompleto"] ?> ha solicitado sus vacaciones</h3><br><br><br><br>
+
+        <div class="row">
+                <div class="input-field col s2">
+                        <input  class="btn1"  type="submit" value="CONFIRMAR">
+                </div> <br>
+                <div class="input-field col s2">
+                        <input  class="btn2"  type="submit" value="RECHAZAR">
+                </div>
+            </div>
+    </form>
+    </body>
+</body>
+</html>
