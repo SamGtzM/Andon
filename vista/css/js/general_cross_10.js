@@ -1,3 +1,8 @@
+var connectionRatchet = new WebSocket('ws://localhost:8080');
+connectionRatchet.onopen = function(e){
+  console.log('connexion establecida');
+};
+
 /*=============================================
     CARGAR DATOS DINAMICOS GENERAL CROSS_10
 =============================================*/
